@@ -23,7 +23,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Install project dependencies
-        run: pip isntall -r requirement.txt
+        run:
+          pip isntall -r requirements.txt
 
       - name: Run tests
         run:
